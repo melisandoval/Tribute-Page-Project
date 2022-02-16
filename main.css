@@ -1,0 +1,488 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    position: relative;
+    scroll-behavior: smooth;
+}
+
+:root {
+  --purple: #621c84;
+  --soft-pink: rgb(254 230 229);
+  --green: #a2aa3a;
+}
+
+/* --------------------------------- general content --------------------------------------- */
+
+.general-content {
+  margin: 5% 15% 10%;
+}
+
+a:link {
+  color: var(--purple);
+}
+
+a:hover {
+  color: var(--soft-pink);
+}
+
+a:visited {
+  color: var(--green);
+}
+
+@media(max-width: 772px){
+  .general-content{
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
+
+h2{
+  font-family: 'Chicle', cursive, 'Lato', sans-serif;
+  text-align: center;
+  color: var(--purple);
+  font-size: clamp(3rem, 4vw, 5vw);
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+}
+
+h3{
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+  font-size: clamp(2rem, 3vw, 5vw);
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+}
+
+p {
+  font-family: 'Lato', sans-serif;
+  font-size: clamp(1rem, 1.5rem, 2rem);
+}
+
+
+/* ------------------------------------- PARALLAX --------------------------------------- */
+            /* Based on: https://www.w3schools.com/howto/howto_css_parallax.asp */
+
+.bgimg-1header {
+    background-image: url("https://i.pinimg.com/originals/8a/d6/01/8ad60127aa7255ad433e654646ba52d8.gif");
+    width: 100%;
+}
+
+.bgimg-2-retrato {
+    background-image: url("https://images8.alphacoders.com/649/thumb-1920-649168.jpg");
+    width: 100%;
+}
+
+.bgimg-3 {
+    background-image: url("https://arc-anglerfish-arc2-prod-infobae.s3.amazonaws.com/public/H4J7P3OTIBCGLL6HQW4DKOTUHI.jpg");
+    width: 100%;
+}
+
+.bgimg-4 {
+    background-image: linear-gradient(rgba(0, 0, 0,.3),rgba(0, 0, 0,.2)), url("https://i.pinimg.com/originals/66/ac/a5/66aca55d3d74bff3fcd7f7c04d27088b.gif");
+    width: 100%;
+}
+
+.bgimg-5 {
+    background-image: url("https://i.pinimg.com/originals/8a/d6/01/8ad60127aa7255ad433e654646ba52d8.gif");
+    width: 100%;
+}
+
+.bgimg-6 {
+    background-image: url("https://i.pinimg.com/originals/8a/d6/01/8ad60127aa7255ad433e654646ba52d8.gif");
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.bgimg-1header, .bgimg-2-retrato, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6 {   
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100%;
+    max-width: 100%;
+}    
+
+
+/* Turn off parallax scrolling for all tablets and phones. */
+@media only screen and (max-device-width: 414px) {
+    .bgimg-1header, .bgimg-2-retrato, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6 {
+      background-attachment: scroll;
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+    }
+  }
+
+/* ------------------------------------ header --------------------------------------- */
+
+header {
+    position: absolute;
+    left: 0;
+    top: 20%;
+    width: 100%;
+    text-align: center;
+}
+
+h1 span {
+    align-self: center;
+    color: black;
+    text-align: center;
+}
+.major {
+    display: block;
+    font-size: clamp(6rem, 16vw, 16vw);
+    font-family: 'Chicle', cursive;
+    /* text-shadow: 1vw 1vw white; */
+    text-shadow: 1vw 1vw var(--soft-pink);
+}
+
+.h1minor-container {
+  display: flex;
+  justify-content: center;
+}
+
+.minor {
+    display: block;
+    margin-top: 2vw;
+    padding: 0.3vw 2vw;
+    /* border-radius: 0.7vw; */
+    border-radius: 3vw;
+    font-size: clamp(2rem, 3vw, 5vw);
+    font-family: 'Lato', sans-serif;
+    font-style: italic;
+    text-align: center;
+    text-shadow: 2px 2px 2px white;
+    background-color: var(--soft-pink);
+}
+
+/* ------------------------------------ quote --------------------------------------- */
+
+#quote {
+    margin: 10% 15%;
+    text-align: center;
+}
+
+/* --------------------------------- article --------------------------------------- */
+
+article {
+  display: flex;
+  flex-direction: column;
+}
+
+.gifs {
+    width: min(500px, 85%);
+    height: auto;
+    margin-top: 3vw;
+    margin-bottom: 3vw;
+    border-radius: 5px;
+    align-self: center;
+}
+
+/* --------------------------------- timeline section --------------------------------------- */
+                /* based on: https://www.youtube.com/watch?v=-uzOuGlUfDQ */
+
+.timeline-section {
+  /* display: flex;
+  justify-content: center; */
+}
+
+i {
+  font-style: normal;
+  font-size: 3vw;
+}
+
+.year-container {
+  display: flex;
+  justify-content: center;
+}
+
+li {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  font-size: clamp(1rem, 1.8vw, 2vw);
+  padding-right: 20px;
+  padding-bottom: 10px;
+}
+
+.year-title{
+font-size: clamp(2rem, 2rem, 2vw);
+font-family: 'Chicle', cursive, 'Lato', sans-serif;
+text-align: center;
+/* color: #5e12bb; */
+/* color: #510963; */
+/* color: #5b1264; */
+color: var(--purple);
+text-shadow: 2px 2px 8px white;
+}
+
+.wrapper {
+ max-width: 1080px;
+ margin: 50px auto;
+ /* padding: 0 20px; */
+ position: relative;
+}
+
+.wrapper .center-line {
+  position: absolute;
+  height: 100%;
+  width: 4px;
+  background-color: var(--green);
+  left: 50%;
+  transform: translateX(-50%);
+  top: 15px;
+}
+
+.wrapper .row {
+  display: flex;
+}
+
+.wrapper .row-1 {
+  justify-content: flex-start;
+}
+
+.wrapper .row-2 {
+  justify-content: flex-end;
+}
+
+.wrapper .row section{
+  background-color: var(--soft-pink);
+  border-radius: 5px;
+  width: calc(50% - 90px);
+  padding: 30px;
+  position: relative;
+}
+
+.wrapper .row section::before{
+  position: absolute;
+  content: "";
+  height: 15px;
+  width: 15px;
+  background: var(--soft-pink);
+  top: 28px;
+  transform: rotate(45deg);
+  z-index: -1;
+}
+
+.row section .icon, 
+.center-line .scroll-icon {
+  position: absolute;
+  background-color: var(--green);
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50px;
+  color: var(--soft-pink);
+  font-size: 30px;
+}
+
+.center-line .scroll-icon {
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.row-1 section .icon {
+  top: 13px;
+  right: -46px;
+}
+
+.row-2 section .icon {
+  top: 13px;
+  left: -50px;
+}
+
+.row-1 section::before{
+  right: -7px;
+}
+
+.row-2 section::before{
+  left: -7px;
+}
+
+@media(max-width: 772px){
+  .wrapper .center-line{
+    left: 30px;
+  }
+  .wrapper .row{
+    margin: 30px 0 3px 60px;
+
+  }
+  .wrapper .row section {
+    width: 100%;
+  }
+  .row-1 section::before{
+    left: -7px;
+  }
+  .row-1 section .icon {
+    left: -55px;
+  }
+}
+
+
+
+
+/* ------------------------------- discography section --------------------------------------- */
+
+.discography-section {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-top: 7%;
+    margin-bottom: 10%;
+}
+
+.albums-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.album {
+  block-size: 300px;
+  margin: 10px;
+  aspect-ratio: 1 / 1;
+  background-color: var(--green);
+  border-style: solid;
+  border-width: 10px;
+  /* border-color: #dbbfa2; */
+  border-color: var(--soft-pink);
+}
+
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  /* border: 1px solid #f1f1f1; */
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  /* -webkit-backface-visibility: hidden; Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: var(--soft-pink);
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: var(--soft-pink);
+  transform: rotateY(180deg);
+  display: grid;
+  place-items: center;
+}
+
+.flip-card-back-content { 
+  display: grid;
+  place-items: center;
+  padding: 15px;
+}
+
+.types-of-albums {
+  font-size: clamp(1.4rem, 2vw, 3vw);
+  font-style: italic;
+  padding-top: 10px;
+}
+
+.disc-title{
+  font-family: 'Chicle', cursive;
+  font-weight: bold;
+  /* color: #5e12bb; */
+  /* color: #510963; */
+  /* color: #510963; */
+  /* color: #5b1264;  */
+  color: var(--purple);
+  text-shadow: 2px 2px 8px white;
+  font-size: clamp(1.5rem, 2rem, 3rem);
+  display: grid;
+  place-items: center;
+  text-align: center;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+.disc-year{
+  margin-bottom: 5%;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 1.5rem;
+  text-decoration-color: #5e12bb;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding-top: 2%;
+  padding-bottom: 5%;
+}
+
+
+/* ------------------------------- "the end"section --------------------------------------- */
+
+#frasedelfinal {
+    margin: 5% 15%;
+    text-align: center;
+}
+
+.the-end-text {
+    position: relative;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: black;
+    /* font-size: clamp(6rem, 16vw, 16vw); */
+    font-size: clamp(5rem, 12vw, 14vw);
+    font-family: 'Chicle', cursive;
+    text-shadow: 0.7vw 0.7vw white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+/* ------------------------------- footer --------------------------------------- */
+
+footer {
+    position: relative;
+    width: 100%;
+    background-color: var(--soft-pink);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.text-footer {
+  font-size: 1rem;
+  margin-block-start: 0.5em;
+  margin-block-end: 0.5em;
+}
