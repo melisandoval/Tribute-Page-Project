@@ -16,8 +16,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,700;0,900;1,100;1,700;1,900&display=swap"
-    rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,700;0,900;1,100;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
@@ -44,13 +45,13 @@
       </div>
     </section>
 
-    <!-- main: article -->
+    <!-- main: article / biography -->
 
     <div class="bgimg-2-retrato"></div>
 
     <div class="general-content">
       <main id="main">
-        <article>
+        <article id="tribute-info">
           <h2>The explosive storm from the 60s rock</h2>
           <p>
             Janis Joplin was born in 1943 and died in 1970. Was an American
@@ -82,11 +83,16 @@
             shattered every stereotype about female artists – and essentially
             invented the “rock mama” paradigm.
           </p>
-          <img
-            class="gifs"
-            src="https://img.wattpad.com/18f832311e1af7813cb2ec49859affea05843cb2/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f32636166386744355364534c67413d3d2d37362e313437373066306365313333333832313234383836323338363934342e676966"
-            alt="Janis dancing on stage"
-          />
+          <figure id="img-div">
+            <img
+              class="gifs"
+              src="https://img.wattpad.com/18f832311e1af7813cb2ec49859affea05843cb2/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f32636166386744355364534c67413d3d2d37362e313437373066306365313333333832313234383836323338363934342e676966"
+              alt="Janis dancing on stage"
+              id="image"
+              style="display: block; max-width: 500px"
+            />
+            <figcaption id="img-caption">Janis dancing on stage.</figcaption>
+          </figure>
           <p>
             In 1967, Joplin rose to fame following an appearance at Monterey Pop
             Festival, where she was the lead singer of the then little-known San
@@ -732,11 +738,15 @@
       <div>
         <p class="text-footer">
           Sources:
-          <a href="https://es.wikipedia.org/wiki/Janis_Joplin" target="_blanck"
-            >Wikipedia</a
+          <a
+            id="tribute-link"
+            href="https://es.wikipedia.org/wiki/Janis_Joplin"
+            target="_blank"
           >
+            Wikipedia
+          </a>
           and
-          <a href="https://janisjoplin.com/" target="_blanck"
+          <a href="https://janisjoplin.com/" target="_blank"
             >janisjoplin.com.</a
           >
         </p>
@@ -744,5 +754,6 @@
       </div>
     </footer>
     <!-- </div> -->
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
   </body>
 </html>
