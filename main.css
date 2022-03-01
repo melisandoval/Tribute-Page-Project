@@ -160,8 +160,8 @@ h1 span {
   font-family: "Lato", sans-serif;
   font-style: italic;
   text-align: center;
-  text-shadow: 2px 2px 2px white;
-  background-color: var(--soft-pink);
+  color: var(--soft-pink);
+  text-shadow: 3px 3px 1px black;
 }
 
 /* ---- quote ---- */
