@@ -10,3 +10,5 @@ On top of the course requirements, I wanted to add a Parallax Scrolling, more im
 
 I had so much fun building this project. Hope you enjoy it too!
 
+https://melisandoval.github.io/Tribute-Page-Project/
+
