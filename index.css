@@ -63,7 +63,7 @@ p {
 /* Based on: https://www.w3schools.com/howto/howto_css_parallax.asp */
 
 .bgimg-1header {
-  background-image: url("./img/background-images/background-1.gif");
+  background-image: url("./img/background-images/background-1.avif");
   width: 100%;
   display: grid;
   place-items: center;
@@ -86,7 +86,7 @@ p {
 }
 
 .bgimg-end {
-  background-image: url("./img/background-images/background-1.gif");
+  background-image: url("./img/background-images/background-1.avif");
   width: 100%;
   display: grid;
   place-items: center;
